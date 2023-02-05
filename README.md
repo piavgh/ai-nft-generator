@@ -60,5 +60,7 @@ For example:
 - `0xc156cd42DEe4dfeB1B6371FB22BA2fC41732Fe45` is the newly deployed address
 
 ### 7. Start frontend
-`$ cd app`
-`$ yarn start`
+```
+$ cd app
+$ yarn start
+```
