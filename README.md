@@ -41,5 +41,24 @@ You'll also need to create an account on [NFT.Storage](https://nft.storage/), an
 In a separate terminal execute:
 `$ forge create --rpc-url "$ETH_RPC_URL" src/NFT.sol:NFT --constructor-args "AI Generated NFT" "AINFT" 1000000000000000`
 
+Then get the deployed address
+
+### 7. Change frontend `app/src/config.json` file
+For example:
+
+```json
+{
+    "5": {
+        "nft": {
+            "address": "0xc156cd42DEe4dfeB1B6371FB22BA2fC41732Fe45"
+        }
+    }
+}
+```
+
+- `5` is ID of Goerli network
+- `0xc156cd42DEe4dfeB1B6371FB22BA2fC41732Fe45` is the newly deployed address
+
 ### 7. Start frontend
+`$ cd app`
 `$ yarn start`
